@@ -1,0 +1,20 @@
+object Matchstmt
+  fn grade(score: Int(32)): String = {
+    (score / 10) match 
+      case 10 => 100
+      case 9 => 90
+      case 8 => 80
+      case 7 => 70
+      case _ => 60
+    end match
+    match {
+      case 100 => "K"
+      case 90 => "O"
+      case 80 => "R"
+      case 70 => "E"
+      case 60 => "A"
+    }
+  }
+
+  Std.printString("5! = "  ++ grade(85))
+end Matchstmt

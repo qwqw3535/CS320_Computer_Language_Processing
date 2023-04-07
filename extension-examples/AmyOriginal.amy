@@ -1,0 +1,11 @@
+object AmyOriginal
+  fn foo(): Int(32) = {1}
+  if (true) {
+    0
+  }
+  else {
+    foo() match {
+      case _ => 1
+    }
+  }
+end AmyOriginal

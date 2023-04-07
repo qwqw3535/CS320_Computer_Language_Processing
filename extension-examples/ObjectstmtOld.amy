@@ -1,0 +1,3 @@
+object ObjectstmtOld
+  Std.printString("Hello " ++ "world!")
+end ObjectstmtOld

@@ -1,0 +1,21 @@
+object Ifstmt
+  fn fact_old(i: Int(32)): Int(32) = {
+    if (i < 2) { 1 }
+    else { 
+      val rec: Int(32) = fact(i-1);
+      i * rec
+    }
+  }
+
+  fn fact_new(i: Int(32)): Int(32) = {
+    if (i < 2) 
+      1 
+    else  
+      val rec: Int(32) = fact(i-1);
+      i * rec
+    end if
+  }
+
+  Std.printString("fact_old : 5! = "  ++ Std.intToString(fact_old(5)));
+  Std.printString("fact_new : 5! = " ++ Std.intToString(fact_new(5)))
+end Ifstmt
